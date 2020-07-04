@@ -1,0 +1,82 @@
+<link rel="icon" href="favicon.ico" />
+
+<style>
+   body {
+      background-color: darkgray;
+      font-family: 'Yu Gothic';
+      font-weight: bold;
+      text-align: center;
+   }
+
+   img {
+      width: 100%;
+   }
+
+   ul {
+      list-style-type: none;
+   }
+
+   li {
+      list-style: none;
+      margin: 5px;
+      float: left;
+      width: 24%;
+   }
+
+
+
+   #grid {
+      width: 100%;
+      text-align: center;
+   }
+
+   .clearLeft {
+      clear: left;
+   }
+</style>
+
+<head>
+   <meta charset="utf-8" />
+   <link href="viewer.min.css" rel="stylesheet">
+   <script src="viewer.min.js"></script>
+
+</head>
+
+<body>
+
+   <hr class="clearLeft">
+   <h1>任天堂関連グラフ</h1>
+
+   <div id="grid">
+      <ul id="nintendo">
+         <li>Nintendo Switch<br>本体及び主要なゲームのアップデート履歴<br><img src="NintendoUpdate.png" alt="Nintendo Switch　本体及び主要なゲームのソフトウェアアップデート履歴"></li>
+         <li>Nintendo Direcの履歴<br><img src="NintendoDirect.png" alt="Nintendo Direcの履歴"></li>
+      </ul>
+   </div>
+
+
+
+   <script>
+      var viewerA = new Viewer(document.getElementById('nintendo'), {
+         toolbar: {
+            zoomIn: true,
+            zoomOut: true,
+            oneToOne: true,
+            reset: true,
+            prev: true,
+            play: {
+               show: true,
+               size: 'large',
+            },
+            next: true,
+            rotateLeft: false,
+            rotateRight: false,
+            flipHorizontal: false,
+            flipVertical: false,
+         },
+      });
+
+
+   </script>
+
+</body>
