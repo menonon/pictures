@@ -54,6 +54,26 @@
       </ul>
    </div>
 
+   <hr class="clearLeft">
+   <h1>その他ゲーム関連の図</h1>
+
+   <div id="grid">
+      <ul id="nintendo2">
+         <li>任天堂コントローラ トレース<br><img src="nintendo-controler.png" alt="任天堂コントローラ トレース"></li>
+         <li>任天堂 据置機 販売数量 20/03<br><img src="nintendo-console-sell.png" alt="任天堂 据置機 販売数量 "></li>
+         <li>任天堂 携帯機 販売数量 20/03<br><img src="nintendo-handheld-sell.png" alt="任天堂 携帯機 販売数量"></li>
+         <li>任天堂 メディア呼称<br><img src="nintendo-media.png" alt="任天堂 メディア呼称"></li>
+         <li>任天堂 据置機 価格推移<br><img src="nintendo-console-price.png" alt="任天堂 据置機 価格推移"></li>
+         <li>任天堂 携帯機 価格推移<br><img src="nintendo-handheld-price.png" alt="任天堂 携帯機 価格推移"></li>
+         <li>プレイステーション 価格推移<br><img src="playstation-console-price.png" alt="プレイステーション 価格推移"></li>
+         <li>任天堂 修理期間<br><img src="nintendo-repair.png" alt="任天堂 修理期間"></li>
+         <li>任天堂 立体視の歴史<br><img src="nintendo-3d.png" alt="任天堂 立体視の歴史"></li>
+         <li>ゲーム機のCPUとGPU<br><img src="game-cpugpu.png" alt="ゲーム機のCPUとGPU"></li>
+         <li>ゲーム機の十字ボタン・方向キー・方向ボタン<br><img src="game-directionbutton.png" alt="ゲーム機の十字ボタン・方向キー・方向ボタン"></li>
+         <li>NewNintendo2DSLL<br><img src="NewNintendo2DSLL.png" alt="NewNintendo2DSLL"></li>
+      </ul>
+   </div>
+
 
 
    <script>
@@ -76,7 +96,24 @@
          },
       });
 
-
+      var viewerB = new Viewer(document.getElementById('nintendo2'), {
+         toolbar: {
+            zoomIn: true,
+            zoomOut: true,
+            oneToOne: true,
+            reset: true,
+            prev: true,
+            play: {
+               show: true,
+               size: 'large',
+            },
+            next: true,
+            rotateLeft: false,
+            rotateRight: false,
+            flipHorizontal: false,
+            flipVertical: false,
+         },
+      });
    </script>
 
 </body>
