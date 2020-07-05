@@ -1,0 +1,118 @@
+<link rel="icon" href="favicon.ico" />
+
+<style>
+   body {
+      background-color: darkgray;
+      font-family: 'Yu Gothic';
+      font-weight: bold;
+      text-align: center;
+   }
+
+   img {
+      width: 100%;
+   }
+
+   ul {
+      list-style-type: none;
+   }
+
+   li {
+      list-style: none;
+      margin: 5px;
+      float: left;
+      width: 24%;
+   }
+
+
+
+   #grid {
+      width: 100%;
+      text-align: center;
+   }
+
+   .clearLeft {
+      clear: left;
+   }
+</style>
+
+<head>
+   <meta charset="utf-8" />
+   <link href="viewer.min.css" rel="stylesheet">
+   <script src="viewer.min.js"></script>
+
+</head>
+
+<body>
+
+   <hr class="clearLeft">
+   <h1>ヨーヨー関連の図</h1>
+
+   <div id="grid">
+      <ul id="yoyo">
+         <li>ヨーヨー ヒストリー<br><img src="yoyo-1.png" alt="ヨーヨー ヒストリー"></li>
+         <li>ヨーヨー トレンド<br><img src="yoyo-2.png" alt="ヨーヨー トレンド"></li>
+         <li>ヨーヨー 大会のシード権等の図<br><img src="yoyo-3.png" alt="ヨーヨー 大会のシード権等の図"></li>
+         <li>ヨーヨー 世界大会チャンピオン一覧<br><img src="yoyo-4.png" alt="ヨーヨー 世界大会チャンピオン一覧"></li>
+      </ul>
+   </div>
+
+   <hr class="clearLeft">
+   <h1>その他の図</h1>
+
+   <div id="grid">
+      <ul id="other">
+         <li>新幹線大雑把路線図<br><img src="shinkansen.png" alt="新幹線大雑把路線図"></li>
+         <li>日本の航空会社の系譜<br><img src="aviationJapan.png" alt="日本の航空会社の系譜"></li>
+         <li>世界の航空機メーカーの系譜<br><img src="airplane-maker.png" alt="世界の航空機メーカーの系譜"></li>
+         <li><br>iPadのSoC<img src="iPad.png" alt="iPadのSoC"></li>
+         <li><br>iPhoneのSoC<img src="iPhone.png" alt="iPhoneのSoC"></li>
+         <li><br>iPod touchのSoC<img src="iPodtouch.png" alt="iPod touchのSoC"></li>
+         <li><br>VRHMDの接続図 2016<img src="VRHMD.png" alt="VRHMDの接続図"></li>
+         <li><br>いろんなメインメモリ搭載量 2019<img src="main-memory.png" alt="いろんなメインメモリ搭載量 2019"></li>
+         <li><br>日本の祝日<img src="holidayJapan.png" alt="日本の祝日"></li>
+      </ul>
+   </div>
+
+
+
+   <script>
+      var viewerA = new Viewer(document.getElementById('yoyo'), {
+         toolbar: {
+            zoomIn: true,
+            zoomOut: true,
+            oneToOne: true,
+            reset: true,
+            prev: true,
+            play: {
+               show: true,
+               size: 'large',
+            },
+            next: true,
+            rotateLeft: false,
+            rotateRight: false,
+            flipHorizontal: false,
+            flipVertical: false,
+         },
+      });
+
+      var viewerB = new Viewer(document.getElementById('other'), {
+         toolbar: {
+            zoomIn: true,
+            zoomOut: true,
+            oneToOne: true,
+            reset: true,
+            prev: true,
+            play: {
+               show: true,
+               size: 'large',
+            },
+            next: true,
+            rotateLeft: false,
+            rotateRight: false,
+            flipHorizontal: false,
+            flipVertical: false,
+         },
+      });
+   </script>
+
+</body>
